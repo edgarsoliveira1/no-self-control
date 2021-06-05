@@ -1,0 +1,37 @@
+{
+  "name": "no-self-control",
+  "version": "1.0.1",
+  "description": "A pomodoro timer that blocks youtube.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.my.app",
+    "productName": "No Self Control",
+    "linux": {
+      "icon": "./images/joker.icns",
+      "target": "deb"
+    },
+    "deb": {},
+    "artifactName": "MyApp_${version}_Setup.${ext}",
+    "forceCodeSigning": false
+  },
+  "author": {
+    "name": "Edgar dos Santos Oliveira",
+    "email": "edgarmutt@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/edgarsay/EJET",
+  "repository": "https://github.com/edgarsay/EJET",
+  "devDependencies": {
+    "electron": "^7.2.4",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "sudo-prompt": "^9.2.1"
+  }
+}
